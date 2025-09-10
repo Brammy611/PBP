@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Sign On Form</title>
+  <link rel="stylesheet" href="styles.css" type="text/css" media="all" />
+</head>
+<body>
+  <form action="validation.php" method="post">
+    <h2>Student Sign On Form</h2>
+    <!-- Username -->
+    <div>
+      <label>Username:</label>
+      <p>Note: Username cannot contain numbers</p>
+      <input type="text" name="username" required><br><br>
+    </div>
+    
+
+    <!-- Email -->
+    <div>
+      <label>Email:</label>
+      <p>Note: Email contain @ followed by domain</p>
+      <input type="email" name="email" required><br><br>
+    </div>
+
+    <!-- Perguruan Tinggi -->
+    <div>
+      <label>Perguruan Tinggi:</label><br>
+      <input type="text" name="kampus"><br><br>
+    </div>
+    
+
+    <!-- Program Studi -->
+    <div>
+      <label>Program Studi:</label><br>
+      <input type="radio" name="prodi" value="Informatika" required> Informatika<br>
+      <input type="radio" name="prodi" value="Matematika"> Matematika<br>
+      <input type="radio" name="prodi" value="Fisika"> Fisika<br>
+      <input type="radio" name="prodi" value="Kimia"> Kimia<br>
+      <input type="radio" name="prodi" value="Statistika"> Statistika<br>
+      <input type="radio" name="prodi" value="Biologi"> Biologi<br><br>
+    </div>
+  
+    <!-- Hobi -->
+    <div>
+      <label>Hobi:</label><br>
+      <input type="checkbox" name="hobi[]" value="Futsal"> Futsal<br>
+      <input type="checkbox" name="hobi[]" value="Badminton"> Badminton<br>
+      <input type="checkbox" name="hobi[]" value="Membaca"> Membaca<br>
+      <input type="checkbox" name="hobi[]" value="Menulis"> Menulis<br>
+      <input type="checkbox" name="hobi[]" value="Traveling"> Traveling<br><br>
+    </div>
+    
+    <!-- Password -->
+    <div>
+      <label>Password:</label><br>
+      <input type="password" name="password" required>
+      <p>Hint: Password must be at least 8 characters long, include al least one uppercase letter, one lowercase letter, and one number.</p>
+    </div>
+
+    <!-- Tombol Submit -->
+    <input type="submit" value="Submit">
+
+  </form>
+</body>
+</html>
+
